@@ -10,6 +10,7 @@
 sudo mkdir -p /L4D2Server/Addons
 sudo mkdir -p /L4D2Server/Ems
 sudo chown -R 27015:27015 /L4D2Server
+sudo chmod -R 777 /L4D2Server
 docker run -d \
     --name L4D2-Server \
     -p 27015:27015/udp \
