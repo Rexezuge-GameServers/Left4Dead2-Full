@@ -22,6 +22,11 @@ LABEL UPSTREAM="https://github.com/Rexezuge/L4D2-Dedicated-Server-Full-Docker"
 #   EXPOSE 27015/tcp
 EXPOSE 27015/udp
 
+# Volume
+VOLUME /L4D2Content/left4dead2/addons \
+       /L4D2Content/left4dead2/ems \
+       /L4D2Content/left4dead2/cfg
+
 # Environment(s)
 ENV SRV_PORT=27015 \
     SRV_MAP="c14m1_junkyard" \
