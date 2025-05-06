@@ -26,8 +26,7 @@ EXPOSE 27015/udp
 
 # Volume
 VOLUME /L4D2Content/left4dead2/addons \
-       /L4D2Content/left4dead2/ems \
-       /L4D2Content/left4dead2/cfg
+       /L4D2Content/left4dead2/ems
 
 # Environment(s)
 ENV SRV_PORT=27015 \
