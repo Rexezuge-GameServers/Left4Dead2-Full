@@ -6,6 +6,8 @@ ARG SRV_UPDATE_SERVER=1 \
 
 RUN /.Entrypoint.sh
 
+RUN rm /L4D2Content/left4dead2/addons/readme.txt
+
 FROM scratch
 
 COPY --from=runtime / /
