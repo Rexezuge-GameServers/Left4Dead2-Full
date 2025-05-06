@@ -32,12 +32,10 @@ VOLUME /L4D2Content/left4dead2/addons \
 # Environment(s)
 ENV SRV_PORT=27015 \
     SRV_MAP="c14m1_junkyard" \
-    SRV_SECURE_SERVER=1 \
-    SRV_LAUNCH_SERVER=1
-ENV CFG_RESTORE_DEFAULT=1 \
-    CFG_INFORMATION_HOSTNAME="Community Left4Dead 2 World Server" \
+    SRV_SECURE_SERVER=1
+ENV CFG_INFORMATION_HOSTNAME="Community Left4Dead 2 World Server" \
     CFG_INFORMATION_STEAM_GROUP=0 \
     CFG_SETTINGS_GAME_TYPE="coop,realism"
 
 # Set Entrypoint
-ENTRYPOINT ["/bin/bash", "-c", "exec /.Entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "-c", "export SRV_LAUNCH_SERVER=1 && export CFG_RESTORE_DEFAULT=1 && exec /.Entrypoint.sh"]
