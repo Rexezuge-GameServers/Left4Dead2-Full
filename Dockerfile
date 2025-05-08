@@ -6,7 +6,3 @@ COPY --from=asserts / /
 
 # Image Label(s)
 LABEL UPSTREAM="https://github.com/Rexezuge-GameServers/Left4Dead2-Full"
-
-# Volume
-VOLUME /L4D2Content/left4dead2/addons \
-       /L4D2Content/left4dead2/ems
