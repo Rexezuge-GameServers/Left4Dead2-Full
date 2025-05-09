@@ -1,10 +1,23 @@
-# Left 4 Dead 2 Server Docker Image (Full Content)
+# Left4Dead2-Full
 
 ## Source
 
-[Github/Rexezuge/L4D2-Dedicated-Server-Full-Docker](https://github.com/Rexezuge/L4D2-Dedicated-Server-Full-Docker)
+[Github/Rexezuge-GameServers/Left4Dead2-Full](https://github.com/Rexezuge-GameServers/Left4Dead2-Full)
 
 ## Launch Server
+
+👉 Setup Persist Volumes
+
+```bash
+sudo mkdir -p /L4D2Server/Addons
+sudo mkdir -p /L4D2Server/Ems
+sudo chown -R 27015:27015 /L4D2Server/Addons
+sudo chown -R 27015:27015 /L4D2Server/Ems
+sudo chmod -R 777 /L4D2Server/Addons
+sudo chmod -R 777 /L4D2Server/Ems
+```
+
+✅ Launch Server
 
 ```bash
 sudo mkdir -p /L4D2Server/Addons
