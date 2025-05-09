@@ -20,10 +20,6 @@ sudo chmod -R 777 /L4D2Server/Ems
 ✅ Launch Server
 
 ```bash
-sudo mkdir -p /L4D2Server/Addons
-sudo mkdir -p /L4D2Server/Ems
-sudo chown -R 27015:27015 /L4D2Server
-sudo chmod -R 777 /L4D2Server
 docker run -d \
     --name L4D2-Server \
     -p 27015:27015/udp \
@@ -31,5 +27,5 @@ docker run -d \
     -v /L4D2Server/Ems:/L4D2Content/left4dead2/ems \
     --cap-drop=ALL \
     --log-driver=journald \
-    rexezuge/l4d2-server-full
+    rexezugegameservers/left4dead2-full
 ```
