@@ -6,5 +6,7 @@ COPY --from=asserts /SteamCMD /SteamCMD
 
 COPY --from=asserts /L4D2Content /L4D2Content
 
+ENV CFG_RESTORE_DEFAULT=1
+
 # Image Label(s)
 LABEL UPSTREAM="https://github.com/Rexezuge-GameServers/Left4Dead2-Full"
